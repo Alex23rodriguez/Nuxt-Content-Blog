@@ -1,13 +1,11 @@
 ---
 title: Testing correct date but incorrect title in slug
 slug: 2022-02-10-this-is-another-title
-description: will this work?
+description: this indeed does not break the page, but, clicking on on the blog
+  post takes us to a non-existing url. Additionally, manually typing in the
+  correct url also does not work.
 img: blog-2.jpg
 ---
-# My first blog post
+# after posting notes:
 
-Welcome to my first blog post using content module
-
-Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, quo. Suscipit unde labore necessitatibus fugiat? Repellendus magnam reprehenderit, repudiandae impedit suscipit pariatur unde reiciendis aperiam dolore aliquam aut eum sapiente molestiae animi praesentium numquam, dolores quisquam exercitationem beatae nulla? Maxime.
-
-Suscipit unde labore necessitatibus fugiat? Repellendus magnam reprehenderit, repudiandae impedit suscipit pariatur unde reiciendis aperiam dolore aliquam aut eum sapiente molestiae animi praesentium numquam, dolores quisquam exercitationem beatae nulla? Maxime
+this does not break the page
