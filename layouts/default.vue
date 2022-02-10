@@ -1,10 +1,4 @@
 <template>
-  <head>
-    <script
-      defer
-      src="https://identity.netlify.com/v1/netlify-identity-widget.js"
-    ></script>
-  </head>
   <div>
     <Header />
     <Nuxt />
@@ -21,6 +15,21 @@
     }
   </script>
 </template>
+
+<script>
+export default {
+  head() {
+    return {
+      script: [
+        // hid is used as unique identifier. Do not use `vmid` for it as it will not work
+        {
+          src: "https://identity.netlify.com/v1/netlify-identity-widget.js",
+        },
+      ],
+    };
+  },
+};
+</script>
 
 <style>
 * {
