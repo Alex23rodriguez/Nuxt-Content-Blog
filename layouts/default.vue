@@ -1,8 +1,25 @@
 <template>
+  <head>
+    <script
+      defer
+      src="https://identity.netlify.com/v1/netlify-identity-widget.js"
+    ></script>
+  </head>
   <div>
     <Header />
     <Nuxt />
   </div>
+  <script>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", (user) => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
+  </script>
 </template>
 
 <style>
@@ -14,7 +31,7 @@
   font-family: sans-serif;
 }
 body {
-  background-color: #EEE;
+  background-color: #eee;
 }
 a {
   text-decoration: none;

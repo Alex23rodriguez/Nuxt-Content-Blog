@@ -1,0 +1,16 @@
+backend:
+  name: git-gateway
+  branch: main
+media_folder: "assets/resources"
+public_folder: "/_nuxt/img"
+collections:
+  - name: "blog"
+    label: "Blog"
+    folder: "content/blog"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Image", name: "img", widget: "image" }
+      - { label: "Body", name: "body", widget: "markdown" }
