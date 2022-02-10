@@ -1,11 +1,12 @@
 ---
 title: My second blog post
 description: Welcome to my second blog post using the content module.
-slug: second-post
+slug: 2022-02-01-second-post
 img: blog-2.jpg
 ---
 
 # Mastering VueJS
+
 ### My learning notes on Vue (version 3)
 
 ## Installation Types
@@ -16,11 +17,12 @@ img: blog-2.jpg
 - Vite
 
 ### CLI Installation
+
 The `cli` installation is easy but requires prior knowledge of `NodeJS`.
 
 Installing the CLI is as easy as running the following command in your terminal (requires node/npm to be installed).
 
-``` sh
+```sh
 yarn global add @vue/cli
 # OR
 npm install -g @vue/cli
@@ -34,7 +36,7 @@ Vue is a progressive framework for building user interfaces. Unlike other monoli
 
 Personally, Vue is the _easiest_ frontend framework / library to learn.
 
-Vue uses __declarative rendering__, this means that it can render data to the DOM using _standard_ HTML template syntax such as;
+Vue uses **declarative rendering**, this means that it can render data to the DOM using _standard_ HTML template syntax such as;
 
 ```html
 <div id="block">
@@ -48,7 +50,7 @@ Using Vue you can create links between the data and the DOM for example if we ha
 
 ## Directives
 
-Vue uses html `attributes` known as __directives__ `e.g. 'v-on'`. Directives can attach event listeners that invoke methods in our instances. See example below;
+Vue uses html `attributes` known as **directives** `e.g. 'v-on'`. Directives can attach event listeners that invoke methods in our instances. See example below;
 
 ```html
 <div id="event-handler">
@@ -62,5 +64,3 @@ The above snippet tells Vue to run the method `doSomething` when the button is c
 There is more directives than `v-on`, for example you can also use `v-model` to bind data to an DOM element or use `v-if` to conditionally render an element. There is a lot more too what you can find scattered around the [Vue Website](https://v3.vuejs.org/guide/).
 
 On top of the existing directives you can also create your own custom directives. [Find out more here](https://v3.vuejs.org/guide/custom-directive.html#intro).
-
-
